@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            body{
+                height: 3000px;
+                background-color: gray 
+
+            }
+            #relative{
+                height: 200px;
+                width: 200px;
+                border: 4px solid black;
+                background-color: blue;
+                position: relative;
+                top: 80px;
+                left: 250px;
+                color: black;
+                text-align: center;
+                font-size: 18px;
+            }
+            .container{
+                height: 300px;
+                width: 400px;
+                border: 4px solid black;
+                background-color: forestgreen;
+                position: relative;
+                top: 50px;
+                left: 100px;
+                color: black;
+                text-align: center;
+                font-size: 18px;
+                margin: 40px;
+            }
+            #absolute{
+                 height: 200px;
+                width: 200px;
+                border: 4px solid black;
+                background-color: red;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                color: black;
+                text-align: center;
+                font-size: 18px;
+            }
+            #fixed{
+                height: 200px;
+                width: 200px;
+                border: 4px solid black;
+                background-color: gold;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                color: black;
+                text-align: center;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="box" id="relative">1. RELATIVE POSITION </div>
+            <div class="container"> CONTAINER
+            <div class="box" id="absolute"> ABSOLUTE INSIDE RELATIVE</div>
+            <div class="box" id="fixed">3. FIXED POSITION</div>
+        </div>
+    </body>
+</html>
