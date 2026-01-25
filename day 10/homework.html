@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed and Absolute Positioning</title>
+    <style>
+        /* Basic reset for clean layout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            line-height: 1.6;
+        }
+
+        /* 1. FIXED HEADER 
+           Pinned to the top of the screen */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            background: #232f3e;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 9999; /* Ensures it stays above all other content */
+        }
+
+        /* Content wrapper to push content below the fixed header */
+        .content {
+            margin-top: 100px; 
+            padding: 20px;
+            height: 200vh; /* Extra height to allow scrolling */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 2. RELATIVE CONTAINER 
+           Acts as the "anchor" for any absolute children */
+        .card {
+            position: relative; 
+            width: 350px;
+            height: 200px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        /* 3. ABSOLUTE BUTTON 
+           Positioned specifically relative to .card */
+        .abs-button {
+            position: absolute;
+            bottom: 15px; /* 15px from the bottom of the card */
+            right: 15px;  /* 15px from the right of the card */
+            
+            padding: 10px 25px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .abs-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fixed-header">
+        <h1>Navigation Bar</h1>
+    </header>
+
+    <main class="content">
+        <h2>Scroll down to see the header stay put.</h2>
+        <p style="margin-bottom: 40PX;">The button below is absolutely positioned inside its card.</p>
+
+        <div class="card">
+            <h3>Card Title</h3>
+            <p>The button in this box is positioned at the bottom-right corner regardless of other text.</p>
+            
+            <button class="abs-button">Click Me</button>
+        </div>
+    </main>
+
+</body>
+</html>

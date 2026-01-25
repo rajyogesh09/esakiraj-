@@ -1,0 +1,58 @@
+/* Remove default gap */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 1️⃣ Fixed Header full width */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+
+/* 2️⃣ Relative container */
+.header-box {
+  position: relative;
+  height: 60px;
+  background: #444;
+}
+
+/* Absolute button inside relative */
+.header-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* Push page content down */
+.content {
+  margin-top: 140px;
+  padding: 20px;
+}
+
+/* 3️⃣ Display vs Visibility */
+.show {
+  background: lightgreen;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.hide-display {
+  display: none;
+}
+
+.visible {
+  background: lightskyblue;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.hide-visibility {
+  visibility: hidden;
+  background: pink;
+  padding: 10px;
+}
