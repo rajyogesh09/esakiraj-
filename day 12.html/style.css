@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.pricing{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+     
+
+
+}
+.box{
+    flex: 1;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+h4{
+    margin-bottom: 10px;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}.box2{
+      flex: 1;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+ align-self: flex-start;
+  transform: translateY(-20px);
+   border: 2px solid #007bff;
+}
